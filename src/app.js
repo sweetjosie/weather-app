@@ -18,7 +18,7 @@ function formatDate(timeStamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`;
+  return ` Last Update ${day} ${hours}:${minutes}`;
 }
 function formatDay(timeStamp) {
   let date = new Date(timeStamp * 1000);
@@ -34,14 +34,10 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
 
   forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      ` 
+    forecastHTML += ` 
    
             <div class="col-2">
-              <div class="forecast-day">${forecastDay}${formatDay(
-        forecastDay.dt
-      )}</div>
+              <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
               
               <img src=" http://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
