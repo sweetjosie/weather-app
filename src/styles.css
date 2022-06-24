@@ -50,3 +50,18 @@ li {
   cursor: default;
   text-decoration: none;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-day {
+  font-size: 16px;
+  color: gray;
+  opacity: 0.5;
+}
+.forecast-temps {
+  font-size: 13px;
+}
+.forecast-temp-min {
+  opacity: 0.5;
+}
