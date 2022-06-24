@@ -20,8 +20,9 @@ function formatDate(timeStamp) {
   let day = days[date.getDay()];
   return ` Last Update ${day} ${hours}:${minutes}`;
 }
-function formatDay(timeStamp) {
-  let date = new Date(timeStamp * 1000);
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "wed", "Thu", "Fri", "Sat"];
   return days[day];
