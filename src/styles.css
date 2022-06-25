@@ -1,6 +1,7 @@
 .background-image {
   background-image: url("noaa-zdj3p00Rep0-unsplash.jpg");
-  background-size: 94%;
+  background-size: 200%;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -32,6 +33,7 @@ li {
   padding: 25px;
   border: 1px solid rgb(11, 1, 1);
   border-radius: 5px;
+  background-color: rgba(230, 230, 221, 0.5);
 }
 .source {
   max-width: 600px;
