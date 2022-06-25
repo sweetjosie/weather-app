@@ -1,9 +1,10 @@
 .background-image {
   background-image: url("noaa-zdj3p00Rep0-unsplash.jpg");
+  width: auto;
 }
 
 h1 {
-  color: brown;
+  color: maroon;
   font-size: 24 px;
   font-weight: 200;
   line-height: 28px;
@@ -18,10 +19,11 @@ li {
   list-style: none;
   display: block;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bolder;
   text-align: left;
   text-transform: capitalize;
+  fo
 }
 .border {
   max-width: 700px;
@@ -45,12 +47,12 @@ li {
   top: -34px;
 }
 .weather-temperature .active {
-  color: black;
+  color: rgb(11, 11, 11);
   cursor: default;
 }
 
 .weather-temperature .active:hover {
-  color: black;
+  color: rgb(16, 16, 16);
   cursor: default;
   text-decoration: none;
 }
@@ -60,7 +62,7 @@ li {
 }
 .forecast-day {
   font-size: 16px;
-  color: gray;
+  color: rgb(86, 4, 4);
   opacity: 0.5;
 }
 .forecast-temps {
