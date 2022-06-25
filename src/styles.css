@@ -7,6 +7,7 @@ h1 {
   color: rgb(128, 0, 0);
   font-size: 24px;
   font-weight: 200;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 28px;
   padding: 20px;
 }
@@ -19,7 +20,7 @@ li {
   list-style: none;
   display: block;
   font-size: 16px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   text-align: left;
   text-transform: capitalize;
@@ -29,7 +30,7 @@ li {
   margin: 0 auto;
   margin-top: 50px;
   padding: 25px;
-  border: 1px solid gray;
+  border: 1px solid rgb(11, 1, 1);
   border-radius: 5px;
 }
 .source {
@@ -62,7 +63,6 @@ li {
 .forecast-day {
   font-size: 16px;
   color: rgb(86, 4, 4);
-  opacity: 0.5;
 }
 .forecast-temps {
   font-size: 13px;
