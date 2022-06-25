@@ -40,7 +40,7 @@ function displayForecast(response) {
               <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
               ${index}
               <img src=" http://openweathermap.org/img/wn/${
-                forecastDay.weather[1].icon
+                forecastDay.weather[0].icon
               }@2x.png" alt="#" width="36"/>
               <div class="forecast-temps">
                 <span class="forecast-temp-max">${Math.round(
