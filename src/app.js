@@ -61,7 +61,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let = apiKey = "2f7186f46a8461ec8b967033c17abe5b";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=inperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -93,7 +93,7 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "2f7186f46a8461ec8b967033c17abe5b";
 
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -104,33 +104,7 @@ function holdSubmit(event) {
   search(cityInputElement.value);
 }
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  let FahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-
-  temperatureElement.innerHTML = Math.round(FahrenheitTemp);
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
-}
-
-let celsiusTemp = null;
-
 let form = document.querySelector("#search");
 form.addEventListener("submit", holdSubmit);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
-
-search("Rio de Janeiro");
+search("Sonora");
