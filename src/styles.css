@@ -1,5 +1,6 @@
 .background-image {
   background-image: url("noaa-zdj3p00Rep0-unsplash.jpg");
+  width: auto;
 }
 
 h1 {
@@ -62,6 +63,7 @@ li {
 .forecast-day {
   font-size: 16px;
   color: rgb(86, 4, 4);
+  opacity: 0.5;
 }
 .forecast-temps {
   font-size: 13px;
